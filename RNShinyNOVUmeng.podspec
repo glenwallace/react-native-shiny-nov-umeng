@@ -17,6 +17,10 @@ Pod::Spec.new do |s|
   s.source_files = "ios/*.{h,m}"
   s.requires_arc = true
   s.preserve_paths = 'README.md', 'package.json', 'index.js'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+
 
   s.dependency 'React'
   s.dependency 'UMCommon','~> 7.4.1'
