@@ -4,8 +4,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RNShinyNOVUmeng : NSObject
 
-+ (instancetype)shared;
-- (void)configAppKey:(NSString *)appKey andChannel:(NSString *)channel;
++ (void)configAppKey:(NSString *)appKey andChannel:(NSString *)channel;
 
 @end
 
